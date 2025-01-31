@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
 
   // Update the base URL to reflect the project structure on GitHub Pages
-  base: '/My_Own_Portfolio/frontend/',  // Set the correct base URL
+   base: '/_My_Portfolio/',  // Set the correct base URL
 });
