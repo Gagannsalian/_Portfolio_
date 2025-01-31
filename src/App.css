@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* App.css */
+
+/* Typing Animation */
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Typing animation class */
+  .typing-animation {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(14) 1s 1 normal both; /* First line 'Hi, I am Gagan N' (14 characters) */
+  }
+  
+  .typing-animation + br + .typing-animation {
+    animation: typing 3s steps(6) 5s 1 normal both; /* Second line 'Salian' (6 characters) */
+  }
+  
