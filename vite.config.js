@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from '@tailwindcss/vite'; // Tailwind plugin
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss()],  // You can keep this if you want
 
-  // Update the base URL to reflect the project structure on GitHub Pages
-  base: '/_Portfolio_/',  // Set the correct base URL
+  base: '/_Portfolio_/', // Update base URL for GitHub Pages deployment
 });
